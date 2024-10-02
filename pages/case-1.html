@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 01 </title>
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+
+        .rectangle-1{
+            width: 50vw;
+            height: 50vh;
+            background-color: rgb(255, 0, 0);
+            border: solid,  rgb(255, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .rectangle-2{
+            width: 50vw;
+            height: 50vh;
+            background-color: rgb(0, 99, 0);
+            border:  solid, rgb(0, 99, 0);
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+        }
+
+        .rectangle-3{
+            width: 50vw;
+            height: 50vh;
+            background-color: rgb(210, 210, 0);
+            border:  solid, rgb(210, 210, 0);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+
+
+        .rectangle-4{
+            width: 50vw;
+            height: 50vh;
+            background-color: rgb(255, 0, 123);
+            border: solid, rgb(255, 0, 123);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+
+        }
+
+        .top-left-box{
+            width: 200px;
+            height: 200px;
+            border: solid, white, 5px;
+            background-color: white;
+            border-radius: 124px;
+            position: absolute;
+            top: -100px;
+            left: -100px;
+        }
+
+        .top-right-box{
+            width: 200px;
+            height: 200px;
+            border: solid, white, 5px;
+            background-color: white;
+            border-radius: 124px;
+            position: absolute;
+            top: -100px;
+            right: -100px;
+        }
+
+        .bottom-right-box{
+            width: 200px;
+            height: 200px;
+            border: solid, white, 5px;
+            background-color: white;
+            border-radius: 124px;
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+        }
+
+
+        .bottom-left--box{
+            width: 200px;
+            height: 200px;
+            border: solid, white, 5px;
+            background-color: white;
+            border-radius: 124px;
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+        }
+
+
+        .top-middle-box{
+            width: 200px;
+            height: 200px;
+            border: solid, white, 5px;
+            background-color: white;
+            border-radius: 124px;
+            position: absolute;
+            top: -100px;
+            left: 43%;
+        }
+
+
+        .bottom-middle-box{
+            width: 200px;
+            height: 200px;
+            border: solid, white, 5px;
+            background-color: white;
+            border-radius: 124px;
+            position: absolute;
+            bottom: -100px;
+            left: 43%;
+        }
+
+        /* .square{
+            width: 200px;
+            height: 200px;
+            border: solid, white;
+            position: absolute;
+            top: 34%;
+            left: 43.5%;
+            background-color: white;
+
+           
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: solid, red;
+            border-radius: 75px;
+            background-color: red;
+            position: absolute;
+            top: 41%;
+            left: 46.8%;
+
+        } */
+
+
+        .square{
+        width: 200px;
+        height: 200px;
+        border-style: solid, white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:  red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid, red;
+}
+
+        .square-red{
+            width: 200px;
+            height: 200px;
+            border: solid, white;
+            position: absolute;
+            top: 9%;
+            left: 17%;
+            /* transform: translate(-50%,-50%); */
+            border-radius: 127px;
+            background-color: white;
+
+        }
+ 
+        .square-green{
+            width: 200px;
+            height: 200px;
+            border: solid, white;
+            position: absolute;
+            top: 9%;
+            left: 68%;
+            border-radius: 127px;
+            background-color: white;
+
+        }
+
+
+        .square-pink{
+            width: 200px;
+            height: 200px;
+            border: solid, white;
+            position: absolute;
+            top: 61%;
+            left: 17%;
+            border-radius: 127px;
+            background-color: white;
+
+        }
+
+
+        .square-yellow{
+            width: 200px;
+            height: 200px;
+            border: solid, white;
+            position: absolute;
+            top: 61%;
+            left: 68%;
+            border-radius: 127px;
+            background-color: white;
+
+        }
+
+        .square-red-square{
+            width: 75px;
+            height: 75px;
+            border: red,solid;
+            position: absolute;
+            top: 124px;
+            left: 320px;
+            background-color: red;
+        }
+
+        .square-green-square{
+            width: 75px;
+            height: 75px;
+            border: red,solid;
+            position: absolute;
+            top: 124px;
+            left: 1094px;
+            background-color: red;
+        }
+
+        .square-pink-square{
+            width: 75px;
+            height: 75px;
+            border: red,solid;
+            position: absolute;
+            top: 498px;
+            left: 320px;
+            background-color: red;
+        }
+        
+        .square-yellow-square{
+            width: 75px;
+            height: 75px;
+            border: red,solid;
+            position: absolute;
+            top: 498px;
+            left: 1094px;
+            background-color: red;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+     <div class="rectangle-1"></div>
+     <div class="rectangle-2"></div>
+     <div class="rectangle-3"></div>
+     <div class="rectangle-4"></div>
+
+     <div class="top-left-box"></div>
+     <div class="top-right-box"></div>
+     <div class="bottom-right-box"></div>
+     <div class="bottom-left--box"></div>
+     <div class="top-middle-box"></div>
+     <div class="bottom-middle-box"></div>
+     
+     <div class="square"></div>
+     <div class="circle"></div>
+
+     <div class="square-red"></div>
+     <div class="square-green"></div>
+     <div class="square-pink"></div>
+     <div class="square-yellow"></div>
+
+    <div class="square-red-square"></div>
+    <div class="square-green-square"></div>
+    <div class="square-pink-square"></div>
+    <div class="square-yellow-square"></div>
+
+</body>
+</html>

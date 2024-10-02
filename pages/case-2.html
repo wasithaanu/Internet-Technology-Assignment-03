@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 02</title>
+
+    <style>
+
+      
+     body{
+        margin: 0;
+     }
+
+     .menu-bar{
+        width: auto;
+        height: 50px;
+        border: solid, 2px;
+        position: relative;
+        top: 0;
+        left: 0 ;
+     }
+
+      .ijse-image{
+      /* width: 5px;
+      height: 10px; */
+      padding: 5px;
+      padding-left: 15px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+     }
+
+     .menu-bar-content{
+        display: flex;
+        width: 400px;
+        float: left;
+        height: 70px;
+
+        /* align-items: center;
+        justify-content: space-between;
+        padding-top: 10;
+        padding-left: 75%;
+        padding-right: 0%;
+        transition: 3s;
+        font-weight: 400px; */
+     }
+
+
+
+     ul{
+      float: left;
+      display: flex;
+      justify-content: right;
+      padding-left: 1140px;
+      font-family: Arial;
+      color: rgb(73, 68, 68);
+     }
+
+     ul li{
+      list-style: none;
+      margin-left: 35px;
+      font-size: 14px;
+     }
+
+     /* div ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px, 10px;
+
+
+     } */
+
+     div ul li a{
+        color:var(--text-color);
+        text-decoration: none;
+        font-weight: bold;
+
+     }
+
+     div ul li a:hover{
+        color:var(--main-color);
+        transition: 3s;
+     }
+
+     .home-bar{
+      width: 400px;
+      height: 1040px;
+      background-color: rgb(77, 2, 77);
+      border: solid, rgb(77, 2, 77 );
+      margin-top: 0;
+      
+      
+     }
+
+     .left-content{
+      margin-left: 20px;
+      margin-top: 30px;
+      color: white;
+      font-weight: 500;
+      font-family: Arial;
+
+     }
+    
+     .right-content{
+      display: flex;
+      position: absolute;
+      top: 55px;
+      left: 410px;
+     }
+
+     .image-box1{
+      width: 367px;
+      height: 260px;
+      border: solid, 1px;
+      background-color: white; 
+     }
+
+     /* .animate-image{
+      width: 367px;
+      height: 260px;
+      
+     } */
+
+    
+
+
+     .image-box2{
+      width: 367px;
+      height: 260px;
+      
+      border: solid, 1px;
+      background-color: white;
+    
+     }
+
+     .image-box3{
+      width: 367px;
+      height: 260px;
+      border: solid, 1px;
+      background-color: white;
+     }
+/* 
+     img{
+      width: 367px;
+      height: 260px;
+     } */
+
+     .animation{
+      width: 367px;
+      height: 260px;
+      position: absolute;
+      top: auto;
+      left: auto;
+      transform-origin: top center;
+      animation: swing 2s ease-in-out infinite;
+      margin-right: -250px;
+
+     }
+
+     /* swing animation */
+
+     /* @keyframes swing{
+      0%{
+         transform: rotate(15deg);
+      }
+
+      50%{
+         transform: rotate(-15deg);
+      }
+      100%{
+         transform: rotate(15deg);
+      }
+     } */
+
+     /* .animation{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+
+     } */
+
+     .paragraph-content{
+      position: absolute;
+      top: 310px;
+      left: 420px;
+     }
+
+     .vertical-bar{
+      width: 1517px;
+      height: 30px;
+      position: absolute;
+      top: 1060px;
+      border: solid, 1px, gray;
+      background-color: gray;
+      padding-bottom: 15px;
+     }
+
+     .vertical-bar-content{
+      text-align: center;
+      color: white;
+     
+     }
+
+
+     
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="menu-bar">
+            <div class="menu-bar-content">
+             
+             
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#AboutUs">AboutUs</a></li>
+                </ul>
+               
+            </div>
+            <div class="ijse-image">
+               <img src="/assets/IJSE image.jpeg" alt="IJSE image" style="width: 180px; height: 45px;">
+             </div>
+             
+        </div>
+
+        <section class="purple-vertical-bar">
+        <div class="home-bar">
+         <div class="left-content">
+               <p>Home</p>
+               <p>Services</p>
+               <p>Contact</p>
+               <p>About Us</p>
+           
+         </div>
+        </div>
+      </section>
+
+
+
+      <section class="horizontal-box">
+         <div class="right-content">
+               <!-- <img src="/assets/Animation image.gif" alt="animate-image"> -->
+         <div class="image-box1">
+            <div class="animate-image">
+               <img src="/assets/Animation image.gif" alt="animate-image" class="animation">
+         </div>
+      </div>
+         <div class="image-box2">
+            <img src="/assets/Animation image.gif" alt="animate-image" class="animation">
+         </div>
+         <div class="image-box3">
+            <img src="/assets/Animation image.gif" alt="animate-image" class="animation">
+         </div>
+      </div>
+      </section>
+
+      <section class="paragraph">
+         <div class="paragraph-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+               Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+               molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+               Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+               molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+            </p>
+
+            
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Magni, quia qui ut repudiandae illo iusto? Cupiditate tempore labore, voluptatibus alias obcaecati, 
+         omnis commodi pariatur architecto voluptas iste consequuntur quam accusantium recusandae nostrum a nihil amet.
+
+        </p>
+
+            
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Magni, quia qui ut repudiandae illo iusto? Cupiditate tempore labore, voluptatibus alias obcaecati, 
+         omnis commodi pariatur architecto voluptas iste consequuntur quam accusantium recusandae nostrum a nihil amet.
+
+        </p>
+
+
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+               Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+               molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+            </p>
+
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+               Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+               molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+            </p>
+
+
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+               Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+               molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+            </p>
+            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+               Quaerat expedita qui natus repellendus. Laudantium odit molestias voluptatibus voluptatum nulla 
+               obcaecati nostrum minus nihil nisi eos, eveniet, fugiat nemo molestiae perferendis! Quo, nulla. Atque, 
+               unde aut porro labore sunt vel est.</p>
+
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+               Quaerat expedita qui natus repellendus. Laudantium odit molestias voluptatibus voluptatum nulla 
+               obcaecati nostrum minus nihil nisi eos, eveniet, fugiat nemo molestiae perferendis! Quo, nulla. Atque, 
+               unde aut porro labore sunt vel est.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta deserunt eveniet id nisi itaque, 
+               tempora nostrum maiores voluptatibus neque. Amet recusandae pariatur quia distinctio vel, 
+               iusto assumenda id molestias nostrum similique cum quos dolorem repellendus fugiat minus 
+               saepe maiores eveniet aliquam magnam rerum fuga? Eos?</p>
+            
+
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+                  molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+               </p>
+               
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+                  molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+               </p>
+
+            
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+                  molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+               </p>
+
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quasi distinctio consequuntur et doloremque possimus perferendis incidunt impedit! Aut possimus 
+                  molestias eligendi impedit provident officia, ut nemo corrupti laudantium maiores assumenda!
+               </p>
+         </div>
+
+      </section>
+       
+      <footer class="vertical-bar">
+            <div class="vertical-bar-content">
+                  <p>Developed by IJSE</p>
+               </div>
+      </footer>
+    </div>
+      
+</body>
+</html>
